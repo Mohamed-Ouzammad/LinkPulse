@@ -1,0 +1,46 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --brand-accent: #6C5CE7;
+  --brand-accent2: #00CEC9;
+  --surface: #F8F8FC;
+  --card: #FFFFFF;
+  --border: rgba(0, 0, 0, 0.08);
+  --text: #0A0A0F;
+  --text-muted: #6B6B80;
+  --text-hint: #A0A0B8;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 2px 16px rgba(108, 92, 231, 0.08);
+  --shadow-lg: 0 8px 40px rgba(108, 92, 231, 0.14);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+
+input, textarea {
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
